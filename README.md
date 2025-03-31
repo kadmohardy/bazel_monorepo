@@ -4,7 +4,6 @@ Bazel Golang Monorepo
 
 This is a Golang monorepo application example using Bazel (Blzmod)
 
-![Chat Preview](http://i.imgur.com/lgRe8z4.png)
 
 ## Setup
 It's important to have Bazel installed. For that, follow link:
