@@ -1,0 +1,3 @@
+# Ativa o Bzlmod (substitui WORKSPACE por MODULE.bazel)
+# build --enable_bzlmod
+common --enable_bzlmod

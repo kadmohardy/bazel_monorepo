@@ -1,0 +1,18 @@
+load("@rules_go//go:def.bzl", "go_binary", "go_library")
+
+go_library(
+    name = "app_b_lib",
+    srcs = ["main.go"],
+    importpath = "github.com/kadmohardy/bazel_monorepo/apps/app_b",
+    visibility = ["//visibility:private"],
+    deps = [
+        "//apps/app_b/handlers",
+        "@com_github_gorilla_mux//:mux",
+    ],
+)
+
+go_binary(
+    name = "app_b",
+    embed = [":app_b_lib"],
+    visibility = ["//visibility:public"],
+)
