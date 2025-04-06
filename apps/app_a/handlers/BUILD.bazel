@@ -5,5 +5,8 @@ go_library(
     srcs = ["hello.go"],
     importpath = "github.com/kadmohardy/bazel_monorepo/apps/app_a/handlers",
     visibility = ["//visibility:public"],
-    deps = ["@com_github_gorilla_mux//:mux"],
+    deps = [
+        "//lib/strings",
+        "@com_github_gorilla_mux//:mux",
+    ],
 )
